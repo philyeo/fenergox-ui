@@ -1,0 +1,37 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/Fenergo.Api/files/concurrent/documentStorageStrategy",
+        "queryParameters": {
+            "location": {
+                "equalTo": "test.txt"
+            },
+            "uuid": {
+                "matches": ".*"
+            },
+            "partIndex": {
+                "matches": ".*"
+            },
+            "totalParts": {
+                "equalTo": "10"
+            },
+            "documentId": {
+                "equalTo": "1"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "fixedDelayMilliseconds": 5000,
+        "headers": {
+            "content-type": "appplication/json"
+        },
+        "jsonBody": {
+            "success": true,
+            "data": {
+                "Location": ""
+            },
+            "message": []
+        }
+    }
+}

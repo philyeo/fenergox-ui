@@ -1,0 +1,81 @@
+<h4 class="primary"><span class="bnpp-type">Document To Upload</span></h4>
+<!-- <div class="filelist-container"> -->
+<div class="table-responsive">
+    <table mat-table [dataSource]="dataSource" multiTemplateDataRows>
+
+        <!-- Checkbox column -->
+        <ng-container matColumnDef="select">
+            <th mat-header-cell *matHeaderCellDef>
+                <mat-checkbox (change)="selectAll()"></mat-checkbox>
+            </th>
+            <td mat-cell *matCellDef="let row">
+                <mat-checkbox [checked]="row.isChecked"></mat-checkbox>
+            </td>
+        </ng-container>
+
+        <!-- filename columns -->
+        <ng-container matColumnDef="fileName">
+            <th mat-header-cell *matHeaderCellDef class="bold-text"> File Name </th>
+            <td mat-cell *matCellDef="let row">{{ row.fileName }}</td>
+        </ng-container>
+
+        <!-- Select columns -->
+        <ng-container matColumnDef="familyCategory">
+            <th mat-header-cell *matHeaderCellDef class="bold-text"> Family Category </th>
+            <td mat-cell *matCellDef="let row">
+                <mat-select [(ngModel)]="row.familyCategory" (selectionChange)="row.genNames = this.retrieveGenericNames(row.familyCategory)">
+                    <mat-option [value]="fcgn.familyCategory" *ngFor="let fcgn of familyCategoryAndGenericNames">
+                        {{ fcgn.familyCategory }}
+                    </mat-option>
+                </mat-select>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="genericName">
+            <th mat-header-cell *matHeaderCellDef class="bold-text"> Generic Name </th>
+            <td mat-cell *matCellDef="let row">
+                <mat-select *ngIf="row.familyCategory" [(ngModel)]="row.genericName">
+                    <mat-option [value]="gname" *ngFor="let gname of row.genNames">
+                        {{ gname }}
+                    </mat-option>
+                </mat-select>
+            </td>
+        </ng-container>
+
+        <!-- Date columns -->
+        <ng-container matColumnDef="documentDate">
+            <th mat-header-cell *matHeaderCellDef class="bold-text"> Document Date </th>
+            <td mat-cell *matCellDef="let row">
+                <div class="form-group" fxLayout="column" fxLayoutAlign="center" fxFlex.gt-sm="50" fxFlex.lt-sm="100" fxFlex.sm="100">
+                    <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="row.documentDate" id="dateInput">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- Text columns -->
+        <ng-container matColumnDef="fileSize">
+            <th mat-header-cell *matHeaderCellDef class="bold-text"> File Size </th>
+            <td mat-cell *matCellDef="let row">{{ row.fileSize }}</td>
+        </ng-container>
+
+        <!-- Action columns -->
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef class="bold-text"> Actions </th>
+            <!-- <td mat-cell *matCellDef="let row"><button mat-icon-button><mat-icon>file_upload</mat-icon></button></td> -->
+            <td mat-cell *matCellDef="let row" class="action-link">
+                <a (click)="uploadFile(row)">
+                    <mat-icon>file_upload</mat-icon>
+                </a>&nbsp;
+                <a (click)="deleteRowData(row)">
+                    <mat-icon>delete</mat-icon>
+                </a>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="tableColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: tableColumns" (click)="selection.toggle(row)"></tr>
+
+    </table>
+</div>

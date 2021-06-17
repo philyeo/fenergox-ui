@@ -1,0 +1,33 @@
+.mat-table {
+    overflow: auto;
+}
+
+.mat-column-select {
+    overflow: visible;
+}
+
+.filelist-container {
+    overflow: auto;
+    height: 400px;
+}
+
+.mat-icon {
+    cursor: pointer;
+}
+
+
+/* #dateInput {
+    width: fit-content !important;
+    border: none;
+}
+
+#dateBox {
+    border: thin solid grey;
+    border-radius: 6px;
+    margin: 1em;
+} */
+
+
+/* .mat-select {
+    border: 1px solid #cbcbcb;
+} */

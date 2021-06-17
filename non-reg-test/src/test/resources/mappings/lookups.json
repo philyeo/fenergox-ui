@@ -1,0 +1,550 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPath": "/Fenergo.Api/lookups",
+        "bodyPatterns": [{
+            "equalToJson": {
+                "keys": [
+                    "DocumentCategory",
+                    "DocumentPurpose"
+                ],
+                "includeInactive": false
+            }
+        }]
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "data": {
+                "DocumentCategory": [{
+                        "value": "17600",
+                        "label": "Activity information"
+                    },
+                    {
+                        "value": "17601",
+                        "label": "Compliance Set-Up"
+                    },
+                    {
+                        "value": "17602",
+                        "label": "Final decision"
+                    },
+                    {
+                        "value": "17603",
+                        "label": "Financial information"
+                    },
+                    {
+                        "value": "17604",
+                        "label": "Financial Security Incident"
+                    },
+                    {
+                        "value": "17605",
+                        "label": "Authorized Signatories - Documents"
+                    },
+                    {
+                        "value": "17606",
+                        "label": "Authorized Signatories - Identification"
+                    },
+                    {
+                        "value": "17607",
+                        "label": "Authorized Signatories - Documents (Foreign Branch)"
+                    },
+                    {
+                        "value": "17608",
+                        "label": "BNPP as Executing broker of an Investment Manager - Documents"
+                    },
+                    {
+                        "value": "17609",
+                        "label": "Directors as Entity - Documents"
+                    },
+                    {
+                        "value": "17610",
+                        "label": "Guarantors - Documents"
+                    },
+                    {
+                        "value": "17612",
+                        "label": "Directors as Person - Documents"
+                    },
+                    {
+                        "value": "17613",
+                        "label": "Member States - Documents"
+                    },
+                    {
+                        "value": "17614",
+                        "label": "Nested Accounts - Identification"
+                    },
+                    {
+                        "value": "17615",
+                        "label": "Parent Companies - Documents"
+                    },
+                    {
+                        "value": "17616",
+                        "label": "Related Entities - Identification"
+                    },
+                    {
+                        "value": "17617",
+                        "label": "SMO - Documents"
+                    },
+                    {
+                        "value": "17618",
+                        "label": "SMO as UBO - Documents"
+                    },
+                    {
+                        "value": "17619",
+                        "label": "SMO as UBO - Identification"
+                    },
+                    {
+                        "value": "17620",
+                        "label": "SMO as UBO - Residency"
+                    },
+                    {
+                        "value": "17622",
+                        "label": "Supervisory Entity - Documents"
+                    },
+                    {
+                        "value": "17623",
+                        "label": "Identification of the client - Legal formation documents"
+                    },
+                    {
+                        "value": "17624",
+                        "label": "Identification of the client - Listing Identification/ Agreement"
+                    },
+                    {
+                        "value": "17625",
+                        "label": "Identification of the client - Regulator Document"
+                    },
+                    {
+                        "value": "17626",
+                        "label": "UBO - Documents"
+                    },
+                    {
+                        "value": "17627",
+                        "label": "UBO - Identification"
+                    },
+                    {
+                        "value": "17628",
+                        "label": "UBO - Residency"
+                    },
+                    {
+                        "value": "17630",
+                        "label": "Products and Transactions"
+                    },
+                    {
+                        "value": "17631",
+                        "label": "Qualitative risk assessment"
+                    },
+                    {
+                        "value": "17632",
+                        "label": "Screening Supporting Documents"
+                    },
+                    {
+                        "value": "17633",
+                        "label": "Guarantors as Entity - Documents"
+                    },
+                    {
+                        "value": "17634",
+                        "label": "Guarantors as Person - Identification"
+                    },
+                    {
+                        "value": "17635",
+                        "label": "Client Confidentiality Supporting Documents"
+                    },
+                    {
+                        "value": "17636",
+                        "label": "Authorized Signatories - Identification (Foreign Branch)"
+                    },
+                    {
+                        "value": "17637",
+                        "label": "Compliance Documents"
+                    },
+                    {
+                        "value": "17638",
+                        "label": "Compliance Set-Up (Foreign Branch)"
+                    },
+                    {
+                        "value": "17639",
+                        "label": "Identification of the Foreign Branch - Legal formation documents"
+                    },
+                    {
+                        "value": "17640",
+                        "label": "Identification of the Foreign Branch - Regulator Document"
+                    },
+                    {
+                        "value": "17641",
+                        "label": "Legal Representatives - Legal Formation Documents"
+                    },
+                    {
+                        "value": "17642",
+                        "label": "Legal Representatives Authorized Signatories - Documents"
+                    },
+                    {
+                        "value": "17643",
+                        "label": "Legal Representatives Authorized Signatories - Identification"
+                    },
+                    {
+                        "value": "17644",
+                        "label": "Screening Supporting Documents (Foreign Branch)"
+                    },
+                    {
+                        "value": "17645",
+                        "label": "SMO - Documents (Foreign Branch)"
+                    },
+                    {
+                        "value": "17646",
+                        "label": "Source of Wealth and Income of Settlors"
+                    }
+                ],
+                "DocumentPurpose": [{
+                        "value": "17600",
+                        "label": "Adverse Information Supporting Documents"
+                    },
+                    {
+                        "value": "17601",
+                        "label": "Annual Report"
+                    },
+                    {
+                        "value": "17602",
+                        "label": "Articles of Agreement"
+                    },
+                    {
+                        "value": "17603",
+                        "label": "Articles of Association"
+                    },
+                    {
+                        "value": "17604",
+                        "label": "Audited Financial Statements"
+                    },
+                    {
+                        "value": "17605",
+                        "label": "Bank International Settlement Screenshot"
+                    },
+                    {
+                        "value": "17606",
+                        "label": "Bank Licence"
+                    },
+                    {
+                        "value": "17607",
+                        "label": "Appraisals"
+                    },
+                    {
+                        "value": "17608",
+                        "label": "CBDDQ"
+                    },
+                    {
+                        "value": "17610",
+                        "label": "CAC Form"
+                    },
+                    {
+                        "value": "17611",
+                        "label": "CAC Minutes"
+                    },
+                    {
+                        "value": "17612",
+                        "label": "Call Memo"
+                    },
+                    {
+                        "value": "17613",
+                        "label": "Certificate of Constitution"
+                    },
+                    {
+                        "value": "17614",
+                        "label": "Certificate of Directors and Secretary"
+                    },
+                    {
+                        "value": "17615",
+                        "label": "Certificate of Good Standing"
+                    },
+                    {
+                        "value": "17616",
+                        "label": "Certificate of Incorporation"
+                    },
+                    {
+                        "value": "17618",
+                        "label": "Charter"
+                    },
+                    {
+                        "value": "17621",
+                        "label": "Copy of the guarantee"
+                    },
+                    {
+                        "value": "17622",
+                        "label": "Declaration"
+                    },
+                    {
+                        "value": "17624",
+                        "label": "Entity's Website Screenshot"
+                    },
+                    {
+                        "value": "17625",
+                        "label": "Extract from the Trade Register"
+                    },
+                    {
+                        "value": "17626",
+                        "label": "Financial Security Incident Form"
+                    },
+                    {
+                        "value": "17627",
+                        "label": "IFSWF Membership"
+                    },
+                    {
+                        "value": "17629",
+                        "label": "Letter of appointment"
+                    },
+                    {
+                        "value": "17630",
+                        "label": "List of authorized signatories"
+                    },
+                    {
+                        "value": "17631",
+                        "label": "List of beneficiary banks"
+                    },
+                    {
+                        "value": "17632",
+                        "label": "Listing Agreement"
+                    },
+                    {
+                        "value": "17634",
+                        "label": "Minutes of shareholders' meeting"
+                    },
+                    {
+                        "value": "17636",
+                        "label": "National Identity Document"
+                    },
+                    {
+                        "value": "17637",
+                        "label": "Negative consent letter"
+                    },
+                    {
+                        "value": "17638",
+                        "label": "Official Document"
+                    },
+                    {
+                        "value": "17639",
+                        "label": "One Form"
+                    },
+                    {
+                        "value": "17640",
+                        "label": "Organization chart"
+                    },
+                    {
+                        "value": "17641",
+                        "label": "Ownership chart"
+                    },
+                    {
+                        "value": "17642",
+                        "label": "Partnership Agreement"
+                    },
+                    {
+                        "value": "17643",
+                        "label": "Passport"
+                    },
+                    {
+                        "value": "17644",
+                        "label": "PEP Supporting Document"
+                    },
+                    {
+                        "value": "17645",
+                        "label": "Power of Attorney"
+                    },
+                    {
+                        "value": "17646",
+                        "label": "Products Dealt List"
+                    },
+                    {
+                        "value": "17647",
+                        "label": "Prospectus/Offering Memorandum"
+                    },
+                    {
+                        "value": "17648",
+                        "label": "Regulator Register Screenshot"
+                    },
+                    {
+                        "value": "17650",
+                        "label": "RM Assessment"
+                    },
+                    {
+                        "value": "17651",
+                        "label": "Sanctions Supporting Document"
+                    },
+                    {
+                        "value": "17652",
+                        "label": "Screening Result Document"
+                    },
+                    {
+                        "value": "17654",
+                        "label": "Statute"
+                    },
+                    {
+                        "value": "17655",
+                        "label": "Stock Exchange Website Screenshot"
+                    },
+                    {
+                        "value": "17656",
+                        "label": "Tax Declaration"
+                    },
+                    {
+                        "value": "17657",
+                        "label": "Transactional profile"
+                    },
+                    {
+                        "value": "17659",
+                        "label": "UBO Certification form"
+                    },
+                    {
+                        "value": "17660",
+                        "label": "Unaudited Financial Statements"
+                    },
+                    {
+                        "value": "17661",
+                        "label": "Utility Bills"
+                    },
+                    {
+                        "value": "17662",
+                        "label": "Wolfsberg Questionnaire"
+                    },
+                    {
+                        "value": "17663",
+                        "label": "AML-CFT/Sanctions Representation Letter"
+                    },
+                    {
+                        "value": "17664",
+                        "label": "Banking Secrecy waiver"
+                    },
+                    {
+                        "value": "17665",
+                        "label": "Adverse Information Supporting Assessment"
+                    },
+                    {
+                        "value": "17666",
+                        "label": "Client UBO Declaration"
+                    },
+                    {
+                        "value": "17667",
+                        "label": "Data Sharing Client Consent"
+                    },
+                    {
+                        "value": "17668",
+                        "label": "Deed of partnership"
+                    },
+                    {
+                        "value": "17669",
+                        "label": "Internal AML procedure"
+                    },
+                    {
+                        "value": "17670",
+                        "label": "Internal Anti Bribery & Corruption Policy"
+                    },
+                    {
+                        "value": "17671",
+                        "label": "MSCQ Entity"
+                    },
+                    {
+                        "value": "17672",
+                        "label": "Management Agreement"
+                    },
+                    {
+                        "value": "17673",
+                        "label": "Memorandum"
+                    },
+                    {
+                        "value": "17674",
+                        "label": "MSCQ Group"
+                    },
+                    {
+                        "value": "17675",
+                        "label": "Non Disclosure Agreement"
+                    },
+                    {
+                        "value": "17676",
+                        "label": "Resolutions Documents"
+                    },
+                    {
+                        "value": "17677",
+                        "label": "Signature Card / Specimen"
+                    },
+                    {
+                        "value": "17678",
+                        "label": "Trust Agreement"
+                    },
+                    {
+                        "value": "17679",
+                        "label": "Bank Statements"
+                    },
+                    {
+                        "value": "17680",
+                        "label": "Brokerage Statements"
+                    },
+                    {
+                        "value": "17681",
+                        "label": "Compliance Involvement"
+                    },
+                    {
+                        "value": "17682",
+                        "label": "FCCQ"
+                    },
+                    {
+                        "value": "17683",
+                        "label": "Inheritance Documents"
+                    },
+                    {
+                        "value": "17684",
+                        "label": "Insurance Documents"
+                    },
+                    {
+                        "value": "17685",
+                        "label": "Legal Representatives Contract"
+                    },
+                    {
+                        "value": "17686",
+                        "label": "Licence"
+                    },
+                    {
+                        "value": "17687",
+                        "label": "List of Representatives"
+                    },
+                    {
+                        "value": "17688",
+                        "label": "Pay Stubs"
+                    },
+                    {
+                        "value": "17689",
+                        "label": "PEP Supporting Assessment"
+                    },
+                    {
+                        "value": "17690",
+                        "label": "Public Filings"
+                    },
+                    {
+                        "value": "17691",
+                        "label": "Purchase/Sale Documents"
+                    },
+                    {
+                        "value": "17692",
+                        "label": "Regulator Attestation"
+                    },
+                    {
+                        "value": "17693",
+                        "label": "Sanctions Supporting Assessment"
+                    },
+                    {
+                        "value": "17694",
+                        "label": "Screening Result Assessment"
+                    },
+                    {
+                        "value": "17695",
+                        "label": "Tax Returns"
+                    },
+                    {
+                        "value": "7508",
+                        "label": "Certificate of Incumbency"
+                    }
+                ]
+            },
+            "messages": []
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "accept, content-type",
+            "Access-Control-Allow-Methods": "POST"
+        }
+    }
+}

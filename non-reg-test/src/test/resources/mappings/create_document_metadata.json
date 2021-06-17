@@ -1,0 +1,63 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/Fenergo.Api.Entity/entitydata",
+        "bodyPatterns": [{
+            "equalToJson": {
+                "requestContext": "addDocument",
+                "entityId": 1,
+                "businessContext": "Case",
+                "parentEntityId": 1,
+                "parentBusinessContext": "Case",
+                "data": {
+                    "Document_Name": "test.txt",
+                    "Document_DocumentCategoryId": 2,
+                    "Document_LookupDocumentStatusId": 1,
+                    "Document_DocumentTypeId": 3,
+                    "Document_DocumentPurposeId": 2,
+                    "Document_ConfidentialityLevel": 0,
+                    "LinkDocumentEntity_ParentBusinessEntityId": 1,
+                    "LinkDocumentEntity_BusinessEntityId": 1,
+                    "LinkDocumentEntity_EntityId": 1,
+                    "LinkDocumentEntity_ParentEntityId": 1,
+                    "LinkDocumentEntity_IsActive": 1,
+                    "LinkDocumentEntity_IsMain": 1
+                }
+            }
+        }]
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "content-type": "appplication/json"
+        },
+        "jsonBody": {
+            "data": {
+                "Document_Id": 1,
+                "Document_Name": "test.txt",
+                "Document_DocumentCategoryId": 2,
+                "Document_LookupDocumentStatusId": 1,
+                "Document_DocumentTypeId": 3,
+                "Document_DocumentPurposeId": 2,
+                "Document_LastUpdatedDate": "2019-11-28T16:40:46",
+                "Document_LastUpdatedBy": "FENERGO\\LMycroft",
+                "Document_CreatedBy": "FENERGO\\LMycroft",
+                "Document_CreatedDate": "2019-11-28T16:40:46",
+                "Document_ConfidentialityLevel": 0,
+                "LinkDocumentEntity_Id": 1,
+                "LinkDocumentEntity_ParentBusinessEntityId": 1,
+                "LinkDocumentEntity_ParentEntityId": 1,
+                "LinkDocumentEntity_BusinessEntityId": 1,
+                "LinkDocumentEntity_IsActive": true,
+                "LinkDocumentEntity_IsMain": true,
+                "LinkDocumentEntity_EntityId": 1,
+                "LinkDocumentEntity_CreatedDate": "2019-11-28T16:40:46",
+                "LinkDocumentEntity_CreatedBy": "FENERGO\\LMycroft"
+            },
+            "messages": [{
+                "text": "Data has been saved successfully",
+                "type": "success"
+            }]
+        }
+    }
+}

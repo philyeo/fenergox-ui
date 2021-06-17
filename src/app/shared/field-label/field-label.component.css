@@ -1,0 +1,45 @@
+.field-line {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.with-bottom-border {
+    border-bottom: #26322866 solid 1px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.field-column>span {
+    word-break: break-all;
+}
+
+.field-column>* {
+    width: 100%;
+}
+
+.field-column mat-radio-button {
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .field-line {
+        display: block;
+        border-bottom: 0px;
+    }
+    .with-bottom-border {
+        border-bottom: 0px;
+    }
+}
